@@ -1,41 +1,59 @@
-.. _content-projects:
+#Exercise 3.25
 
-========
-Projects
-========
+#penggunaan_finding 
+message = "Aku suka alogoritma dan pemograman."
+pemograman_present = 'pemograman' in message
+print(pemograman_present)
 
-The Jupyter community is composed of several sub-communities and projects. These
-are organized around particular use-cases, users, or other aspects of the Jupyter
-community. This section contains information to help navigate these projects
-both from the perspective of a user and a community member.
+#penggunaan_replace
+message = "Aku suka algoritma dan pemograman, tapi aku lebih suka membuat coding."
+message = message.replace('pemograman', 'membuat coding')
+print(message)
+ 
+#penggunaan_count 
+number_membuatcoding = message.count("Aku suka algoritma dan pemograman, tapi aku lebih suka membuat coding.")
+print(number_membuatcoding)
 
-Jupyter Projects and Communities
-================================
+#penggunaan_split
+message = ("Aku suka algoritma dan pemograman, tapi aku lebih suka membuat coding.")
+words = message.split(' ')
+print(words)
 
-Information relevant to understanding the many projects in the Jupyter ecosystem,
-including their technical components and how they work and relate to one another.
+#penggunaan_rfind
+message = ("Aku suka algoritma dan pemograman, tapi aku lebih suka membuat coding.")
+last_membuat_coding_index = message.rfind('membuat coding')
+print(last_membuat_coding_index)
 
+#Exercise 4.2
 
-.. toctree::
-   :maxdepth: 1
+#penggunaan_if statement
+people = ['valen', 'dela', 'cia','andre']
+if len(people) > 3:
+    print("Ruangan terlalu ramai")
 
-   user-interfaces
-   kernels
-   education
-   execution
-   deployment
-   conversion
-   ipython_projects
-   core
-   incubator
-
-
-More information
-================
-
-.. toctree::
-   :maxdepth: 2
-
-   architecture/content-architecture
-   doc-proj-categories
-   /releases
+people = ['valen', 'dela']
+if len(people) >3:
+    print("Ruangan terlalu ramai")
+else:
+    print("Ruangan hanya cukup untuk satu orang")
+    
+#Exercise 4.3
+people = ['valen', 'dela', 'cia','andre','anin',]
+if len(people) >5:
+    print("Ruangan terlalu ramai")
+if len(people) >2:
+    print("Ruangan tidak terlalu ramai")
+else:
+    print("Ruangan tidak ramai")
+    
+#Exercise 4.4
+people = ['valen', 'dela', 'cia','andre','anin','raye']
+if len(people) >5:
+    print("Terdapat kerumunan di dalam ruangan")
+if len(people) >3:
+  print("Ruangan terlalu ramai")
+if len(people) >2:
+    print("Ruangan tidak ramai")
+else:
+    print("Ruangan sepi")
+    
